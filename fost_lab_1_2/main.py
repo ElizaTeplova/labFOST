@@ -27,10 +27,10 @@ while True:
         break
 
 plt.figure(figsize=(13, 6))
-plt.subplot(131)
+plt.subplot(121)
 plt.plot(cObject.x, cObject.y)
 
-plt.subplot(132)
+plt.subplot(122)
 plt.plot(wObject.x, wObject.y)
 plt.suptitle("L - without wind, R - with wind")
 plt.show()
