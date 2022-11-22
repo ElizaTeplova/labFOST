@@ -34,13 +34,22 @@ def main():
         i += 1
         rocket4.calcVH(i)
 
+    plt.figure(figsize=(13, 6))
     plt.subplot(121)
+    plt.xlabel("Tao")
+    plt.ylabel("High")
+    plt.title("H(t)")
+    plt.grid()
     plt.plot(rocket1.getTaoList()[:1001], rocket1.getHList()[:1001])
     plt.plot(rocket2.getTaoList()[:1001], rocket2.getHList()[:1001])
     plt.plot(rocket3.getTaoList()[:1001], rocket3.getHList()[:1001])
     plt.plot(rocket4.getTaoList()[:1001], rocket4.getHList()[:1001])
 
     plt.subplot(122)
+    plt.xlabel(r"$\tau$")
+    plt.ylabel("Speed")
+    plt.title("V(t)")
+    plt.grid()
     plt.plot(rocket1.getTaoList()[:1001], rocket1.getVList()[:1001])
     plt.plot(rocket2.getTaoList()[:1001], rocket2.getVList()[:1001])
     plt.plot(rocket3.getTaoList()[:1001], rocket3.getVList()[:1001])
